@@ -13,4 +13,7 @@ from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mountastic_django.settings')
 
+sys.path.append('/home/ubuntu/mountastic/mountastic-api/mountastic_django')
+sys.path.append('/home/ubuntu/mountastic/mountastic-api')
+
 application = get_wsgi_application()
